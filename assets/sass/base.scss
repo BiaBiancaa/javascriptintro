@@ -1,0 +1,79 @@
+@import 'reset';
+@mixin girar($graus){
+transform:rotate($graus);
+-webkit-transform: rotate($graus);
+-moz-transform: rotate($graus);
+-ms-transform: rotate($graus);
+}
+$cor1:rgb(159, 255, 144);
+$cor2:rgb(155, 252, 107);
+$cor3:rgb(60, 255, 34);
+$cor4:#fff;
+$corhover:rgb(255, 251, 238);
+section{
+    padding: 10px;
+}
+h1{
+    border: 3px solid $cor1;
+    color:$cor2;
+    padding: 10px;
+}
+em{
+    color: $cor2;
+}
+li{
+    padding: 5px 0;
+}
+nav{
+    background-color:$cor3;
+    ul{
+        margin:0;
+        padding: 0;
+        list-style: none;
+    }
+    li{
+        display: inline-block;
+        padding: 10px;
+        a{
+            display: block;
+            background-color:$cor2 ;
+            padding: 10px;
+            text-decoration: none;
+            color: $cor4;
+
+            &:hover{
+                background-color:$corhover ;
+                color: $cor3;
+            }
+        }
+    }
+}
+a{
+    display:block;
+    background-color:$cor2 ;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: $cor4;
+
+    &:hover{
+        background-color:$corhover ;
+        color: $cor3;
+        }
+    }
+.logo{
+    img{
+        display: inline-block;
+        flex: 1;
+    }
+}
+.bg-webpack{
+    height: 200px;
+}
+footer{
+    display: inline-block;
+    background-color:$cor4;
+    img{
+        padding: 23px;
+    }
+}
